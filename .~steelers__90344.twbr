@@ -1,0 +1,1670 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0705.0334                               -->
+<workbook original-version='18.1' source-build='2024.1.5 (20241.24.0705.0334)' source-platform='mac' version='18.1' xml:base='https://haproxy-traffic-splitter' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='steelers_17417322854810' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Food &amp; Beverage Adjustment' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+        <range granularity='0.5' max='10.0' min='1.0' />
+      </column>
+      <column caption='Security Adjustment' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+        <range granularity='0.5' max='10.0' min='1.0' />
+      </column>
+      <column caption='Player Engagement Adjustment' datatype='real' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+        <calculation class='tableau' formula='1.0' />
+        <range granularity='0.5' max='10.0' min='1.0' />
+      </column>
+    </datasource>
+    <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' inline='true' name='federated.0z7fj7z04269k818ctyyk0btcta3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Survey Data Associate Assessment Project 2025' name='excel-direct.0cbdp630l8hygm1dees8g0744ji4'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/sruji/Downloads/Survey Data Associate Assessment Project 2025.xlsx' interpretationMode='0' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0cbdp630l8hygm1dees8g0744ji4' name='Sample Survey Data' table='[&apos;Sample Survey Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:P1505:no:A1:P1505:0' header='yes' outcome='6'>
+            <column datatype='string' name='uuid' ordinal='0' />
+            <column datatype='string' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='Event Location' ordinal='3' />
+            <column datatype='string' name='Event' ordinal='4' />
+            <column datatype='integer' name='Overall Satisfaction' ordinal='5' />
+            <column datatype='integer' name='Value' ordinal='6' />
+            <column datatype='integer' name='Security' ordinal='7' />
+            <column datatype='integer' name='Food and Beverage' ordinal='8' />
+            <column datatype='integer' name='Entertainment' ordinal='9' />
+            <column datatype='integer' name='Player Engagement' ordinal='10' />
+            <column datatype='integer' name='Venue' ordinal='11' />
+            <column datatype='integer' name='Merchandise' ordinal='12' />
+            <column datatype='integer' name='WiFi' ordinal='13' />
+            <column datatype='integer' name='Arrival' ordinal='14' />
+            <column datatype='integer' name='Departure' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0cbdp630l8hygm1dees8g0744ji4' name='Sample Survey Data' table='[&apos;Sample Survey Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:P1505:no:A1:P1505:0' header='yes' outcome='6'>
+            <column datatype='string' name='uuid' ordinal='0' />
+            <column datatype='string' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='string' name='Event Location' ordinal='3' />
+            <column datatype='string' name='Event' ordinal='4' />
+            <column datatype='integer' name='Overall Satisfaction' ordinal='5' />
+            <column datatype='integer' name='Value' ordinal='6' />
+            <column datatype='integer' name='Security' ordinal='7' />
+            <column datatype='integer' name='Food and Beverage' ordinal='8' />
+            <column datatype='integer' name='Entertainment' ordinal='9' />
+            <column datatype='integer' name='Player Engagement' ordinal='10' />
+            <column datatype='integer' name='Venue' ordinal='11' />
+            <column datatype='integer' name='Merchandise' ordinal='12' />
+            <column datatype='integer' name='WiFi' ordinal='13' />
+            <column datatype='integer' name='Arrival' ordinal='14' />
+            <column datatype='integer' name='Departure' ordinal='15' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:P1505:no:A1:P1505:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uuid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[uuid]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>uuid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Event Location]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Event Location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Event]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Event</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall Satisfaction]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Overall Satisfaction</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Security</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Security]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Security</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Food and Beverage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Food and Beverage]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Food and Beverage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Entertainment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Entertainment]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Entertainment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Engagement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Player Engagement]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Player Engagement</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Venue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Venue]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Venue</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Merchandise</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Merchandise]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Merchandise</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WiFi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WiFi]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>WiFi</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrival</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrival]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Arrival</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Departure]</local-name>
+            <parent-name>[Sample Survey Data]</parent-name>
+            <remote-alias>Departure</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Satisfaction' datatype='real' name='[Calculation_1788140214284439552]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Overall Satisfaction])' />
+      </column>
+      <column caption='NPS Category' datatype='string' name='[Calculation_1788140214308880388]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Overall Satisfaction] &gt;= 9 THEN &quot;Promoter&quot;  &#10;ELSEIF [Overall Satisfaction] &gt;= 7 THEN &quot;Passive&quot;  &#10;ELSE &quot;Detractor&quot;  &#10;END' />
+      </column>
+      <column caption='NPS Score' datatype='real' name='[Calculation_1788140214309773317]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(SUM(IF [Calculation_1788140214308880388] = &quot;Promoter&quot; THEN 1 ELSE 0 END) / COUNT([Calculation_1788140214308880388])) &#10;-  &#10;(SUM(IF [Calculation_1788140214308880388] = &quot;Detractor&quot; THEN 1 ELSE 0 END) / COUNT([Calculation_1788140214308880388]))' />
+      </column>
+      <column caption='NPS Color' datatype='string' name='[Calculation_1788140214309957638]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1788140214309773317] &gt; 0.5 THEN &quot;Green - Strong Loyalty&quot;  &#10;ELSEIF [Calculation_1788140214309773317] &gt;= 0 THEN &quot;Yellow - Moderate Loyalty&quot;  &#10;ELSE &quot;Red - Low Engagement&quot;  &#10;END' />
+      </column>
+      <column caption='Predicted Satisfaction (Multi-Factor)' datatype='real' name='[Calculation_1788140214323298317]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Overall Satisfaction] + &#10;(([Parameters].[Parameter 1] - [Food and Beverage]) * 0.3) +&#10;(([Parameters].[Parameter 2] - [Security]) * 0.25) +&#10;(([Parameters].[Parameter 3] - [Player Engagement]) * 0.2)' />
+      </column>
+      <column caption='correlation coefficient' datatype='real' name='[Calculation_6357393880083349504]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_CORR(AVG([Value]), AVG([Value]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Event Location]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Event]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='integer' name='[Overall Satisfaction]' role='measure' type='quantitative' />
+      <column caption='Wi Fi' datatype='integer' name='[WiFi]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sample Survey Data' datatype='table' name='[__tableau_internal_object_id__].[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]' role='measure' type='quantitative' />
+      <column caption='Uuid' datatype='string' name='[uuid]' role='dimension' type='nominal' />
+      <column-instance column='[Event Location]' derivation='None' name='[none:Event Location:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Event]' derivation='None' name='[none:Event:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1788140214309957638]' derivation='User' name='[usr:Calculation_1788140214309957638:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Book1.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/11/2025 10:31:07 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Age]' value='[Extract].[Age]' />
+            <map key='[Arrival]' value='[Extract].[Arrival]' />
+            <map key='[Departure]' value='[Extract].[Departure]' />
+            <map key='[Entertainment]' value='[Extract].[Entertainment]' />
+            <map key='[Event Location]' value='[Extract].[Event Location]' />
+            <map key='[Event]' value='[Extract].[Event]' />
+            <map key='[Food and Beverage]' value='[Extract].[Food and Beverage]' />
+            <map key='[Gender]' value='[Extract].[Gender]' />
+            <map key='[Merchandise]' value='[Extract].[Merchandise]' />
+            <map key='[Overall Satisfaction]' value='[Extract].[Overall Satisfaction]' />
+            <map key='[Player Engagement]' value='[Extract].[Player Engagement]' />
+            <map key='[Security]' value='[Extract].[Security]' />
+            <map key='[Value]' value='[Extract].[Value]' />
+            <map key='[Venue]' value='[Extract].[Venue]' />
+            <map key='[WiFi]' value='[Extract].[WiFi]' />
+            <map key='[__tableau_internal_object_id__].[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]' value='[Extract].[__tableau_internal_object_id__Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]' />
+            <map key='[uuid]' value='[Extract].[uuid]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='Sample Survey Data (Survey Data Associate Assessment Project 2025)' increment-value='%null%' refresh-type='create' rows-inserted='1504' timestamp-start='2025-03-11 22:31:07.201' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>uuid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[uuid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uuid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1504</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>__tableau_internal_object_id__Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[__tableau_internal_object_id__].[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>__tableau_internal_object_id__Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event Location</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Overall Satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Overall Satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Overall Satisfaction</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Security</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Security]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Security</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Food and Beverage</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Food and Beverage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Food and Beverage</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Entertainment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Entertainment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Entertainment</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Player Engagement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Player Engagement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Player Engagement</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Venue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Venue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Venue</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Merchandise</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Merchandise]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Merchandise</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WiFi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WiFi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WiFi</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrival</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrival]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrival</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departure</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Departure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Departure</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sample Survey Data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <aggregation column='[Age]' derivation='None' />
+        <aggregation column='[Arrival]' derivation='Sum' />
+        <aggregation column='[Departure]' derivation='Sum' />
+        <aggregation column='[Entertainment]' derivation='Sum' />
+        <aggregation column='[Event Location]' derivation='None' />
+        <aggregation column='[Event]' derivation='None' />
+        <aggregation column='[Food and Beverage]' derivation='Sum' />
+        <aggregation column='[Gender]' derivation='None' />
+        <aggregation column='[Merchandise]' derivation='Sum' />
+        <aggregation column='[Overall Satisfaction]' derivation='Avg' />
+        <aggregation column='[Player Engagement]' derivation='Sum' />
+        <aggregation column='[Security]' derivation='Sum' />
+        <aggregation column='[Value]' derivation='Sum' />
+        <aggregation column='[Venue]' derivation='Sum' />
+        <aggregation column='[WiFi]' derivation='Sum' />
+        <aggregation column='[uuid]' derivation='None' />
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Event:nk]' palette='jewel_bright_10_0' type='palette'>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Draft Party&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Watch Party&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Event Location:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_1788140214309957638:nk]' palette='sf_sunrise' type='palette'>
+            <map to='#f59623'>
+              <bucket>&quot;Red - Low Engagement&quot;</bucket>
+            </map>
+            <map to='#f5c062'>
+              <bucket>&quot;Green - Strong Loyalty&quot;</bucket>
+            </map>
+            <map to='#f5de98'>
+              <bucket>&quot;Yellow - Moderate Loyalty&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='uuid' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Event Location' />
+        <field-sort-custom-order field='Event' />
+        <field-sort-custom-order field='Overall Satisfaction' />
+        <field-sort-custom-order field='Calculation_1788140214284439552' />
+        <field-sort-custom-order field='Calculation_1788140214292017154' />
+        <field-sort-custom-order field='Value' />
+        <field-sort-custom-order field='Calculation_1788140214307315715' />
+        <field-sort-custom-order field='Security' />
+        <field-sort-custom-order field='Calculation_1788140214309957638' />
+        <field-sort-custom-order field='Food and Beverage' />
+        <field-sort-custom-order field='Entertainment' />
+        <field-sort-custom-order field='Calculation_1788140214323298317' />
+        <field-sort-custom-order field='Calculation_1788140214320730123' />
+        <field-sort-custom-order field='Calculation_1788140214309773317' />
+        <field-sort-custom-order field='Calculation_6357393880083349504' />
+        <field-sort-custom-order field='Player Engagement' />
+        <field-sort-custom-order field='Venue' />
+        <field-sort-custom-order field='Merchandise' />
+        <field-sort-custom-order field='Calculation_1788140214314459143' />
+        <field-sort-custom-order field='WiFi' />
+        <field-sort-custom-order field='Arrival' />
+        <field-sort-custom-order field='Departure' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Food &amp; Beverage Adjustment' datatype='real' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+          <calculation class='tableau' formula='1.0' />
+          <range granularity='0.5' max='10.0' min='1.0' />
+        </column>
+        <column caption='Security Adjustment' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+          <calculation class='tableau' formula='1.0' />
+          <range granularity='0.5' max='10.0' min='1.0' />
+        </column>
+        <column caption='Player Engagement Adjustment' datatype='real' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='1.0'>
+          <calculation class='tableau' formula='1.0' />
+          <range granularity='0.5' max='10.0' min='1.0' />
+        </column>
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sample Survey Data' id='Sample Survey Data_69D0C59AA29B479B838E0D2EF539638F'>
+            <properties context=''>
+              <relation connection='excel-direct.0cbdp630l8hygm1dees8g0744ji4' name='Sample Survey Data' table='[&apos;Sample Survey Data$&apos;]' type='table'>
+                <columns gridOrigin='A1:P1505:no:A1:P1505:0' header='yes' outcome='6'>
+                  <column datatype='string' name='uuid' ordinal='0' />
+                  <column datatype='string' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='string' name='Event Location' ordinal='3' />
+                  <column datatype='string' name='Event' ordinal='4' />
+                  <column datatype='integer' name='Overall Satisfaction' ordinal='5' />
+                  <column datatype='integer' name='Value' ordinal='6' />
+                  <column datatype='integer' name='Security' ordinal='7' />
+                  <column datatype='integer' name='Food and Beverage' ordinal='8' />
+                  <column datatype='integer' name='Entertainment' ordinal='9' />
+                  <column datatype='integer' name='Player Engagement' ordinal='10' />
+                  <column datatype='integer' name='Venue' ordinal='11' />
+                  <column datatype='integer' name='Merchandise' ordinal='12' />
+                  <column datatype='integer' name='WiFi' ordinal='13' />
+                  <column datatype='integer' name='Arrival' ordinal='14' />
+                  <column datatype='integer' name='Departure' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Net Promoter Score (NPS) – Fan Loyalty Indicator</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>Fan Loyalty Score  
+(-1 = Bad, 0 = Neutral, 1 = Excellent)
+</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <repository-location id='1' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column caption='NPS Category' datatype='string' name='[Calculation_1788140214308880388]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Overall Satisfaction] &gt;= 9 THEN &quot;Promoter&quot;  &#10;ELSEIF [Overall Satisfaction] &gt;= 7 THEN &quot;Passive&quot;  &#10;ELSE &quot;Detractor&quot;  &#10;END' />
+            </column>
+            <column caption='NPS Score' datatype='real' name='[Calculation_1788140214309773317]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(SUM(IF [Calculation_1788140214308880388] = &quot;Promoter&quot; THEN 1 ELSE 0 END) / COUNT([Calculation_1788140214308880388])) &#10;-  &#10;(SUM(IF [Calculation_1788140214308880388] = &quot;Detractor&quot; THEN 1 ELSE 0 END) / COUNT([Calculation_1788140214308880388]))' />
+            </column>
+            <column caption='NPS Color' datatype='string' name='[Calculation_1788140214309957638]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1788140214309773317] &gt; 0.5 THEN &quot;Green - Strong Loyalty&quot;  &#10;ELSEIF [Calculation_1788140214309773317] &gt;= 0 THEN &quot;Yellow - Moderate Loyalty&quot;  &#10;ELSE &quot;Red - Low Engagement&quot;  &#10;END' />
+            </column>
+            <column aggregation='Avg' datatype='integer' name='[Overall Satisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1788140214309773317]' derivation='User' name='[usr:Calculation_1788140214309773317:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1788140214309957638]' derivation='User' name='[usr:Calculation_1788140214309957638:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214309957638:nk]' />
+              <text column='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214309773317:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D66B4F26-E525-4043-9EE4-28D56D0C86B3}' />
+    </worksheet>
+    <worksheet name='Breakdown of Experience Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Breakdown of Experience Ratings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='BreakdownofExperienceRatings' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column datatype='integer' name='[Arrival]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Departure]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Entertainment]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Food and Beverage]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Merchandise]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Player Engagement]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Security]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Value]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Venue]' role='measure' type='quantitative' />
+            <column caption='Wi Fi' datatype='integer' name='[WiFi]' role='measure' type='quantitative' />
+            <column-instance column='[Arrival]' derivation='Avg' name='[avg:Arrival:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Departure]' derivation='Avg' name='[avg:Departure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Entertainment]' derivation='Avg' name='[avg:Entertainment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Food and Beverage]' derivation='Avg' name='[avg:Food and Beverage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Merchandise]' derivation='Avg' name='[avg:Merchandise:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Player Engagement]' derivation='Avg' name='[avg:Player Engagement:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Security]' derivation='Avg' name='[avg:Security:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='Avg' name='[avg:Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Venue]' derivation='Avg' name='[avg:Venue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WiFi]' derivation='Avg' name='[avg:WiFi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Arrival:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Departure:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Entertainment:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Food and Beverage:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Merchandise:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Player Engagement:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Security:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Value:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Venue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:WiFi:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' value='65' />
+            <encoding attr='space' class='0' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' field-type='quantitative' max='8.1961436170212743' min='4.4408920985006262e-16' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[:Measure Names]' value='19' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' num-steps='50' palette='red_green_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5052486658096313' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z7fj7z04269k818ctyyk0btcta3].[:Measure Names]</rows>
+        <cols>[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{8C014A7C-1B91-4E84-8892-64E23FD9C291}' />
+    </worksheet>
+    <worksheet name='Demographic Breakdown'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Demographic Breakdown</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='DemographicBreakdown' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column datatype='string' name='[Age]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event Location]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[uuid]' derivation='Count' name='[cnt:uuid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event Location]' derivation='None' name='[none:Event Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column caption='Uuid' datatype='string' name='[uuid]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]'>
+            <groupfilter function='level-members' level='[none:Age:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]' direction='DESC' />
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]'>
+            <groupfilter function='level-members' level='[none:Event Location:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Gender:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Gender:nk]' />
+              <groupfilter function='member' level='[none:Gender:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]</column>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]</column>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='60' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' />
+              <text column='[federated.0z7fj7z04269k818ctyyk0btcta3].[cnt:uuid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk] / [federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk])</rows>
+        <cols>([federated.0z7fj7z04269k818ctyyk0btcta3].[none:Gender:nk] * [federated.0z7fj7z04269k818ctyyk0btcta3].[cnt:uuid:qk])</cols>
+      </table>
+      <simple-id uuid='{3FEF0F05-2655-4018-A3BF-47424B09963D}' />
+    </worksheet>
+    <worksheet name='Satisfaction Over Time (Line Chart)'>
+      <repository-location id='SatisfactionOverTimeLineChart' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column datatype='string' name='[Event]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='integer' name='[Overall Satisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Overall Satisfaction]' derivation='Avg' name='[avg:Overall Satisfaction:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Event]' derivation='None' name='[none:Event:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Event:nk]' />
+              <groupfilter function='member' level='[none:Event:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z7fj7z04269k818ctyyk0btcta3].[avg:Overall Satisfaction:qk]</rows>
+        <cols>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]</cols>
+      </table>
+      <simple-id uuid='{C03842A2-BBB0-4539-A845-0B526A87F8EA}' />
+    </worksheet>
+    <worksheet name='Satisfaction by Event &amp; Location'>
+      <repository-location id='SatisfactionbyEventLocation' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column datatype='string' name='[Age]' role='dimension' type='nominal' />
+            <column caption='Average Satisfaction' datatype='real' name='[Calculation_1788140214284439552]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Overall Satisfaction])' />
+            </column>
+            <column datatype='string' name='[Event Location]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Event]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='integer' name='[Overall Satisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event Location]' derivation='None' name='[none:Event Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Event]' derivation='None' name='[none:Event:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1788140214284439552]' derivation='User' name='[usr:Calculation_1788140214284439552:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Age:nk]' />
+              <groupfilter function='member' level='[none:Age:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]'>
+            <groupfilter function='level-members' level='[none:Event Location:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]</column>
+            <column>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' palette='red_green_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' />
+              <text column='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]</rows>
+        <cols>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]</cols>
+      </table>
+      <simple-id uuid='{993893C1-0F2A-4F54-8979-B4293B4FCCD0}' />
+    </worksheet>
+    <worksheet name='Which Demographics Are Most Satisfied'>
+      <repository-location id='WhichDemographicsAreMostSatisfied' path='/workbooks/steelers_17417322854810' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+            <column datatype='string' name='[Age]' role='dimension' type='nominal' />
+            <column caption='Average Satisfaction' datatype='real' name='[Calculation_1788140214284439552]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Overall Satisfaction])' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column aggregation='Avg' datatype='integer' name='[Overall Satisfaction]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1788140214284439552]' derivation='User' name='[usr:Calculation_1788140214284439552:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' num-steps='250' palette='red_green_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' />
+              <text column='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]</rows>
+        <cols>[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{D4FC8271-EDC7-46CB-A26D-730E8131401E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Steelers International Fan Experience – Data Insights</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Dashboard1' path='/workbooks/steelers_17417322854810' revision='' />
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' preset-index='9' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Sample Survey Data (Survey Data Associate Assessment Project 2025)' name='federated.0z7fj7z04269k818ctyyk0btcta3' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0z7fj7z04269k818ctyyk0btcta3'>
+        <column datatype='string' name='[Age]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Event Location]' role='dimension' type='nominal' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Event Location]' derivation='None' name='[none:Event Location:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='27' param='vert' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4046' id='28' type-v2='title' w='98426' x='787' y='830'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94294' id='7' param='horz' type-v2='layout-flow' w='98426' x='787' y='4876'>
+              <zone h='94294' id='5' type-v2='layout-basic' w='82678' x='787' y='4876'>
+                <zone h='36140' id='3' name='Demographic Breakdown' w='58400' x='25065' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='37643' id='11' name='Satisfaction by Event &amp; Location' w='24278' x='787' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='28133' id='19' name='1' show-caption='true' w='24278' x='787' y='42519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='28518' id='22' name='Which Demographics Are Most Satisfied' w='41339' x='787' y='70652'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='29636' id='24' name='Breakdown of Experience Ratings' w='58400' x='25065' y='41016'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='28518' id='56' is-centered='0' param='Image/Screenshot 2025-03-11 at 7.44.30 PM.png' type-v2='bitmap' w='41339' x='42126' y='70652'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='94294' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='15748' x='83465' y='4876'>
+                <zone h='9232' id='8' name='Demographic Breakdown' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type-v2='filter' w='15748' x='83465' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='19087' id='9' name='Demographic Breakdown' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]' type-v2='filter' w='15748' x='83465' y='14108'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6847' id='10' name='Demographic Breakdown' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type-v2='color' w='15748' x='83465' y='33195'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6743' id='23' name='Which Demographics Are Most Satisfied' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' type-v2='color' w='15748' x='83465' y='40042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6743' id='25' name='Breakdown of Experience Ratings' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' type-v2='color' w='15748' x='83465' y='46785'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='20436' id='29' type-v2='text' w='33268' x='52657' y='74481'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Key Takeaways</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Watch Parties (7.70) outperform Draft Parties (6.95) → Focus on expanding Watch Party experiences. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Food &amp; Beverage has the biggest impact on satisfaction → Invest in better quality &amp; variety. </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>WiFi (7.21), Security (7.23), and Departure (7.28) are the weakest categories </run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Target Audience: Males (25-34) &amp; Females (35-44) have the highest satisfaction. </run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Steelers International Fan Experience – Data Insights</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98340' id='54' param='vert' type-v2='layout-flow' w='98426' x='787' y='830'>
+                <zone h='4046' id='28' type-v2='title' w='98426' x='787' y='830'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37643' id='11' is-fixed='true' name='Satisfaction by Event &amp; Location' w='24278' x='787' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9232' id='8' mode='checkdropdown' name='Demographic Breakdown' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type-v2='filter' w='15748' x='83465' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='19087' id='9' mode='checkdropdown' name='Demographic Breakdown' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]' type-v2='filter' w='15748' x='83465' y='14108'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36140' id='3' is-fixed='true' name='Demographic Breakdown' w='58400' x='25065' y='4876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6847' id='10' name='Demographic Breakdown' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type-v2='color' w='15748' x='83465' y='33195'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='278' h='29636' id='24' is-fixed='true' name='Breakdown of Experience Ratings' w='58400' x='25065' y='41016'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6743' id='25' name='Breakdown of Experience Ratings' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' type-v2='color' w='15748' x='83465' y='46785'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='28133' id='19' is-fixed='true' name='1' show-caption='true' w='24278' x='787' y='42519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='28518' id='22' is-fixed='true' name='Which Demographics Are Most Satisfied' w='82678' x='787' y='70652'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6743' id='23' name='Which Demographics Are Most Satisfied' pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' type-v2='color' w='15748' x='83465' y='40042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='20436' id='29' type-v2='text' w='33268' x='52657' y='74481'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Key Takeaways</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Watch Parties (7.70) outperform Draft Parties (6.95) → Focus on expanding Watch Party experiences. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Food &amp; Beverage has the biggest impact on satisfaction → Invest in better quality &amp; variety. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>WiFi (7.21), Security (7.23), and Departure (7.28) are the weakest categories </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Target Audience: Males (25-34) &amp; Females (35-44) have the highest satisfaction. </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EEAA61B8-59C9-4076-8A3B-5D33F7E8A89B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Demographic Breakdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Gender:nk]' type='filter' />
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type='filter' />
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF51DC1F-C9FE-4868-8C52-8BE820B175F6}' />
+    </window>
+    <window class='worksheet' name='Satisfaction by Event &amp; Location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type='filter' />
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Age:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event Location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67C41B28-86D7-417E-9DE7-38159BD46839}' />
+    </window>
+    <window class='worksheet' name='Breakdown of Experience Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[Multiple Values]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{98B3A9CF-A1E4-4C4E-8691-083D5BF1417E}' />
+    </window>
+    <window class='worksheet' name='1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214309957638:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{84699A81-E180-4A24-ADB3-AD4903ACE763}' />
+    </window>
+    <window class='worksheet' name='Satisfaction Over Time (Line Chart)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[none:Event:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{18EBAF4D-11F3-4F44-BB5F-766A35B5938D}' />
+    </window>
+    <window class='worksheet' name='Which Demographics Are Most Satisfied'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0z7fj7z04269k818ctyyk0btcta3].[usr:Calculation_1788140214284439552:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5997A275-1F54-4E73-B214-96CD79BAF200}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='1' />
+        <viewpoint name='Breakdown of Experience Ratings'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Demographic Breakdown' />
+        <viewpoint name='Satisfaction by Event &amp; Location' />
+        <viewpoint name='Which Demographics Are Most Satisfied' />
+      </viewpoints>
+      <active id='56' />
+      <simple-id uuid='{76B166B3-1C21-48A4-87CE-96158D63D2CB}' />
+    </window>
+  </windows>
+</workbook>
